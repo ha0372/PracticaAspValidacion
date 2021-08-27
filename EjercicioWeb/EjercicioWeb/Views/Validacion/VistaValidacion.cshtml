@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "VistaValidacion";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>VistaValidacion</h2>
+
+@using (Html.BeginForm("Validacion", "Validacion"))
+{
+<div class="contenedor">
+    <label for="nombre"> Nombre de empleado </label>
+    <br>
+    <input type="text" name="nombre" required>
+    <br>
+    <label for="dui">DUI</label>
+    <br />
+    <input type="number" name="dui" required>
+    <br />
+    <br />
+    <input type="submit" class="btn btn-primary" />
+</div>
+}
+
+<style>
+    .contenedor {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
